@@ -8,6 +8,7 @@ body {
 	width: 100vw;
 	position: relative;
 	background-color: hsl(240, 18%, 77%);
+	font-family: 'Inter', sans-serif;
 }
 .continer {
 	height: 60vh;
@@ -21,6 +22,7 @@ body {
 	position: absolute;
 	background-color: rgb(255, 253, 253);
 	z-index: -2;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .userInfo {
 	display: flex;
@@ -30,16 +32,40 @@ body {
 	align-items: flex-start;
 	height: 60vh;
 	width: 60vw;
-	margin-left: 10%;
+	overflow: hidden;
 	padding-top: 30px;
-	background-image: url(./images/pattern-curve.svg);
+	position: relative;
+	padding-left: 90px;
+}
+.fot {
+	position: absolute;
+	left: -20px;
+	top: 320px;
+	z-index: -1;
+	height: 300px;
+	width: 500px;
+	transform: rotatey(348deg);
+	transform: rotatex(339deg);
+}
+.top {
+	position: absolute;
+	left: 120px;
+	top: 125px;
+	z-index: -1;
+	height: 40px;
+	width: 60px;
 }
 .name {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	height: auto;
-	width: 150px;
+	width: 165px;
 	margin-top: 20px;
+	font-weight: 300;
+}
+.h {
+	color: rgb(209, 207, 207);
 }
 .photo {
 	display: flex;
@@ -48,11 +74,18 @@ body {
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	background-image: url(./images/pattern-bg.svg);
+	padding-right: 80px;
 }
 .women {
-	height: 300px;
-	width: 300px;
+	height: 270px;
+	width: 270px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bak {
+	position: absolute;
+	z-index: -1;
+	height: 330px;
+	width: 330px;
 }
 .btn {
 	position: absolute;
@@ -61,14 +94,15 @@ body {
 	height: 35px;
 	width: 65px;
 	border-radius: 20px;
-	cursor: pointer;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background-color: rgb(237, 235, 235);
 	border: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	z-index: 100;
+	cursor: pointer;
 }
 .btn i {
-	color: rgb(191, 191, 191);
+	color: rgb(172, 170, 170);
 	cursor: pointer;
 }
